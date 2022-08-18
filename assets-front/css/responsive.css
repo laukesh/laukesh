@@ -1,0 +1,99 @@
+@media only screen and ( max-width: 767px) {
+    .is-flex {
+        flex-wrap: wrap;
+    }
+    .fa-bars {
+        font-size: 36px;
+        color: #fff;
+    }
+	.footerlink ul {
+		flex-wrap: wrap;
+	}
+    .latestPressRelease .viewAll {
+        top: 8px;
+    }
+    #press-slider {
+        margin-top: 26px;
+    }
+
+    .socail-media-sec .common-box h3 {
+        font-size: 20px;
+    }
+    .samacharlogo p {
+        font-size: 12px;
+    }
+    header .header-top .left-sec {
+        flex-direction: column;
+    }
+    .samacharlogo {
+        text-align: center;
+    }
+
+    .footerlink ul li a {
+        font-size: 13px;
+    }
+
+    .footerlink ul li {
+        padding: 0 2%;
+        margin-bottom: 1px;
+    }
+    .importantLink .common-box {
+        margin-bottom: 5px;
+    }
+    .importantLink h3 {
+        text-align: center;
+    }
+    .videoPhoto .innerbg {
+        height: 100%;
+    }
+    .videoPhoto .common-box a.viewAll {
+        bottom: 3px;
+    }
+    .videoPhoto .common-box.radios {
+        padding-top: 18%;
+    }
+    .videoPhoto .common-box .innerbg {
+        padding-bottom: 15%;
+    }
+    
+    .mobile {display: none}
+    .icon-bar{display: none}
+    .pr-0, .px-0 {
+   margin-right: 12px;
+}
+    
+   .photos_mb {
+    margin: 76px 0px 0px 0px;
+    background: none !important;
+    height: 369px;
+}
+  .videoPhoto .innerbg1 {
+    background: #f2f2f2;
+    border-radius: 4px;
+    height: 82% !important;
+    position: relative;
+}  
+.slick-list
+{
+    position: relative;
+  
+
+    display: block;
+    overflow: hidden;
+
+    margin: auto;
+    padding: 0 0 0 0px;
+}  
+  
+.slick-next {
+    right: -12px!important;
+}  
+  .slick-prev {
+    left: -10px!important;
+}
+  
+  .slick-slide img {
+width: auto !important
+}
+  
+}

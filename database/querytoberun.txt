@@ -1,0 +1,26 @@
+ALTER TABLE `feedback` ADD `medium` VARCHAR(100) NULL DEFAULT NULL AFTER `text`;
+
+INSERT INTO `language_translations` (`id`, `lang_id`, `label`, `translation`, `last_updated_on`) VALUES
+(16885, 1, 'reason', 'Reason For Rejection', '2022-05-05 07:42:08'),
+(16886, 1, 'rejected_by', 'Rejected By', '2022-05-05 09:47:44'),
+(16887, 1, 'mess_sucess_resubmitted', 'Press Release Resubmitted', '2022-05-05 13:23:13');
+
+ALTER TABLE `press_release` ADD `rejected_at` DATETIME NULL DEFAULT NULL AFTER ` deleted_by`;
+
+ALTER TABLE `press_release` ADD `rejected_by` INT(11) NULL DEFAULT NULL AFTER ` rejected_at`;
+
+ALTER TABLE ` press_release_history_log` ADD `rejected_at` DATETIME NULL DEFAULT NULL AFTER ` deleted_at`;
+
+ALTER TABLE ` press_release_history_log` ADD `rejected_by` INT(11) NULL DEFAULT NULL AFTER ` rejected_at`;
+
+ALTER TABLE `press_release` CHANGE `status` `status` INT(11) NOT NULL COMMENT 'draft=1,Pending=2,publish=3, schedule on publish=4, deleted=5, rejected =6,Withdrawl=7, update-text = 8,UnPublished=9,Resubmitted=10';
+
+ALTER TABLE `press_release_history_log` CHANGE `status` `status` INT(11) NULL DEFAULT NULL COMMENT 'draft=1,Pending=2,publish=3, schedule on publish=4, deleted=5, rejected =6,Withdrawl=7, update-text = 8,UnPublished=9,Resubmitted=10';
+
+
+ALTER TABLE `press_release` ADD `reason_for_rejection` VARCHAR(1000) NULL DEFAULT NULL AFTER `keywords`;
+
+ALTER TABLE `press_release_history_log` ADD `reason_for_rejection` VARCHAR(1000) NULL DEFAULT NULL AFTER `keywords`;
+
+
+
